@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Dibout-BTP",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

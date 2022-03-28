@@ -1,0 +1,7 @@
+{
+  "name": "Dibout-BTP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
