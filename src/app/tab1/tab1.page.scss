@@ -1,0 +1,43 @@
+#background-content{
+    left: 0px;
+    right: 0px;
+    top: calc(var(--offset-top) * -1);
+    bottom: calc(var(--offset-bottom) * -1);
+    position: absolute;
+    background: #0077B6;
+}
+
+img{
+    margin: auto;
+    display: flex;
+    margin-top: 75%;
+    
+  
+    
+}
+
+#blanche{
+    border-right :0px solid transparent;
+    border-top : 0px solid transparent;
+    border-left: 415px solid transparent;
+    border-bottom: 90px solid white;
+    height: 10%;
+    width: 0 ;
+    
+}
+
+#carreb{
+    background-color: white;
+    width: 100%;
+    height: 40%;
+
+}
+
+p{
+    text-align: center;
+    margin-top: 0;
+    font-family :fantasy
+}
+ion-button{
+    width: 175px;
+}
