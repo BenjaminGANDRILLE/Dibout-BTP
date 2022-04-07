@@ -1,21 +1,27 @@
 
 <ion-header >
-  <img id="imgh" src="https://www.frbtp.re/template/charte/imgs/logo-white.png">
+   <img id="imgh" src="https://www.frbtp.re/template/charte/imgs/logo-white.png">
 </ion-header>
 <ion-content [fullscreen]="true">
-  
-  
-  <ion-card>
-    <ion-card-header>
-      
+  <div>
+  <p>REVUE DE PRESSE</p>
+  </div>
+  <ion-card *ngFor="let revue of press">
+    <ion-card-header >
+      <h3>{{revue.title.rendered}}</h3>
     </ion-card-header>
   
-    <ion-card-content>
-      
+    <ion-card-content [innerHTML]="revue.excerpt.rendered" >
+      <!-- {{revue.excerpt.rendered}} -->
     </ion-card-content>
+    <ion-card-content>
+      <ion-button expand="block" color="translucent" (click)="goDetail(revue)"  >Lire plus</ion-button></ion-card-content>
+    
   </ion-card>
-  
+ 
+  <ion-button expand="block" color="translucent" href="http://localhost:8100/tabs/tab1"> Déconnexion</ion-button>
 </ion-content>
 <ion-footer translucent="false">
+  
   
 </ion-footer>

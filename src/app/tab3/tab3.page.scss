@@ -1,18 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap');
+
 ion-header{
  background-color: #0077B6;
 }
 
-#imgh{
-    display: block;
+#imgh{ 
+    display: flex;
     margin: auto;
     width: 25%;
+    
 }
 
+header{
+    text-align: center;
+}
 
    
    p{
+    font-family: 'Signika', sans-serif;
+       margin: auto;
        text-align: center;
        color: white;
        margin-top: 5%;
+       margin-bottom: 5%;
+       font-weight: 900;
 
    }
+
+   div{
+       background-color: #0077B6;
+       display: flex;
+       margin: auto;
+   }
+
+   h3{
+    text-align: center;
+    display: flex;
+    color: #0077B6;
+}
+
+ion-button{
+    background-color: #0077B6;
+    
+}
+
+.my-custom-menu {
+    --width: 500px;
+  }
+  

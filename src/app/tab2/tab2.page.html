@@ -1,1 +1,34 @@
 
+<ion-header >
+    <img id="imgh" src="https://www.frbtp.re/template/charte/imgs/logo-white.png">
+ </ion-header>
+ <ion-content [fullscreen]="true">
+   <div>
+   <p>AGENDA</p>
+   </div>
+  
+   <div class="ion-padding">
+    <ion-calendar [(ngModel)]="date"
+      (onChange)="onChange(this)"
+      [type]="type"
+      [options]="options">
+    </ion-calendar>
+  </div>
+
+  <ion-card *ngFor="let event of events">
+    <ion-card-header >
+      <h3>{{event.title.rendered}}</h3>
+    </ion-card-header>
+  
+    <ion-card-content [innerHTML]="event.pec_date" >
+      <!-- {{revue.excerpt.rendered}} -->
+    </ion-card-content>
+    <ion-card-content [innerHTML]="event.slug" ></ion-card-content>
+
+  </ion-card>
+
+   <ion-button expand="block" color="translucent" href="http://localhost:8100/tabs/tab1"> Déconnexion</ion-button>
+ </ion-content>
+ <ion-footer translucent="false">
+
+ </ion-footer>
