@@ -31,7 +31,13 @@ export class Tab2Page {
   constructor() {
       this.getEvents()
   }
-
+ transformDate(Levent){
+  const time = new Date(Levent);
+  console.log(time, "affiche le format de la date par defaut")
+  let retime=time.toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric', hour : "numeric", minute : 'numeric',  localeMatcher: "lookup"})
+  console.log(retime);
+  return retime
+ }
 getEvents(){
     let myHeaders = new Headers();
     myHeaders.append("Cookie", "PHPSESSID=mjl2um438p409o7d1n50q64hl8; wcUserSettings=%7B%7D");

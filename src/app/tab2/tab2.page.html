@@ -1,6 +1,6 @@
 
 <ion-header >
-    <img id="imgh" src="https://www.frbtp.re/template/charte/imgs/logo-white.png">
+    <img id="imgh" src="/assets/frbtp-removebg-preview.png">
  </ion-header>
  <ion-content [fullscreen]="true">
    <div>
@@ -20,7 +20,7 @@
       <h3>{{event.title.rendered}}</h3>
     </ion-card-header>
   
-    <ion-card-content [innerHTML]="event.pec_date" >
+    <ion-card-content [innerHTML]="transformDate(event.pec_date)" >
       <!-- {{revue.excerpt.rendered}} -->
     </ion-card-content>
     <ion-card-content [innerHTML]="event.slug" ></ion-card-content>
